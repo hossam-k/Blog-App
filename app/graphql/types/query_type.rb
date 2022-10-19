@@ -15,7 +15,7 @@ module Types
     end
 
     # List Posts
-    field :list_posts, [PostType], null: false
+    field :list_posts, [PostType], null: false, description: 'List All posts'
 
     # Resolvers
     def list_posts
