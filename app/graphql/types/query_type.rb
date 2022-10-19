@@ -13,5 +13,13 @@ module Types
     def test_field
       "Hello World!"
     end
+
+    # List Posts
+    field :list_posts, [PostType], null: false
+
+    # Resolvers
+    def list_posts
+      Post.all
+    end
   end
 end
